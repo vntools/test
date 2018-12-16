@@ -132,8 +132,8 @@
                                 <td>{{$group->group_name}}</td>
                                 <td>{{$group->created_at}}</td>
                                 <td><span class="edit_group_question detail-pointer" data-id="{{$group->id}}" data-group_name="{{$group->group_name}}"
-                                        data-class="{{$group->class}}">Sửa</span>
-                                    | <span class="delete_group detail-pointer" data-id="{{$group->id}}" onclick="return confirm('Xóa bộ câu hỏi sẽ xóa tất cả câu hỏi có trong bộ, xác nhận xóa?')">Xóa</span></td>
+                                        data-class="{{$group->class}}"><span class="glyphicon glyphicon-edit"></span> Sửa</span>
+                                    | <span class="delete_group detail-pointer" data-id="{{$group->id}}" onclick="return confirm('Xóa bộ câu hỏi sẽ xóa tất cả câu hỏi có trong bộ, xác nhận xóa?')"><span class="glyphicon glyphicon-trash"></span> Xóa</span></td>
                             </tr>
                             @endforeach
                             @else

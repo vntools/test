@@ -24,7 +24,6 @@
             <li><a href="{{url('/admin-logout')}}"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
             </ul>
           </li>
-        <!--
           <li role="presentation" class="dropdown">
             <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-envelope-o"></i>
@@ -35,11 +34,11 @@
                 <a>
                   <span class="image"><img src="{!! asset('public/admin/images/img.jpg') !!}" alt="Profile Image" /></span>
                   <span>
-                    <span>John Smith</span>
+                    <span>Anh Quân</span>
                     <span class="time">3 mins ago</span>
                   </span>
                   <span class="message">
-                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                    Thầy cô cho em hỏi...
                   </span>
                 </a>
               </li>
@@ -47,11 +46,11 @@
                 <a>
                   <span class="image"><img src="{!! asset('public/admin/images/img.jpg') !!}" alt="Profile Image" /></span>
                   <span>
-                    <span>John Smith</span>
-                    <span class="time">3 mins ago</span>
+                    <span>Hồng Thư</span>
+                    <span class="time">7 mins ago</span>
                   </span>
                   <span class="message">
-                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                    Em muốn hỏi bài này...
                   </span>
                 </a>
               </li>
@@ -59,11 +58,11 @@
                 <a>
                   <span class="image"><img src="{!! asset('public/admin/images/img.jpg') !!}" alt="Profile Image" /></span>
                   <span>
-                    <span>John Smith</span>
-                    <span class="time">3 mins ago</span>
+                    <span>Đức trí</span>
+                    <span class="time">8 mins ago</span>
                   </span>
                   <span class="message">
-                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                    Em chào thầy cô ạ...
                   </span>
                 </a>
               </li>
@@ -71,24 +70,24 @@
                 <a>
                   <span class="image"><img src="{!! asset('public/admin/images/img.jpg') !!}" alt="Profile Image" /></span>
                   <span>
-                    <span>John Smith</span>
-                    <span class="time">3 mins ago</span>
+                    <span>Hoàng Quyên</span>
+                    <span class="time">18 mins ago</span>
                   </span>
                   <span class="message">
-                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                    Hello...
                   </span>
                 </a>
               </li>
               <li> 
                 <div class="text-center">
                   <a>
-                    <strong>See All Alerts</strong>
+                    <strong>Xem tất cả</strong>
                     <i class="fa fa-angle-right"></i>
                   </a>
                 </div>
               </li>
             </ul>
-          </li> -->
+          </li>
         </ul>
       </nav>
     </div>

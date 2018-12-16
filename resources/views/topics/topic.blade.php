@@ -132,8 +132,8 @@
                                 <td>{{$topic->topic_name}}</td>
                                 <td>{{$topic->created_at}}</td>
                                 <td><span class="edit_topic_question detail-pointer" data-id="{{$topic->id}}"
-                                        data-topic_name="{{$topic->topic_name}}" data-class="{{$topic->class}}">Sửa</span>
-                                    | <span class="delete_topic detail-pointer" data-id="{{$topic->id}}" onclick="return confirm('Xóa bộ đề thi sẽ xóa tất cả câu hỏi có trong bộ, xác nhận xóa?')">Xóa</span></td>
+                                        data-topic_name="{{$topic->topic_name}}" data-class="{{$topic->class}}"><span class="glyphicon glyphicon-edit"></span> Sửa</span>
+                                    | <span class="delete_topic detail-pointer" data-id="{{$topic->id}}" onclick="return confirm('Xóa bộ đề thi sẽ xóa tất cả câu hỏi có trong bộ, xác nhận xóa?')"><span class="glyphicon glyphicon-trash"></span> Xóa</span></td>
                             </tr>
                             @endforeach
                             @else

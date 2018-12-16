@@ -45,7 +45,7 @@
             <li><a href="#">--</a></li>
           </ul>
         </li>
-        <li><a><i class="fa fa-envelope"></i> Phản hồi </a>
+        <li><a><i class="fa fa-envelope"></i> Phản hồi <span class="label label-success pull-right">6</span></a>
         </li>
         <li><a><i class="fa fa-cog"></i> Cài đặt </a>
         </li>

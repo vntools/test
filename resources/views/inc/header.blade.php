@@ -15,12 +15,12 @@
     <!-- jQuery custom content scroller -->
     <link href="{!! asset('public/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css') !!}" rel="stylesheet"/>
 
-    <!-- Datatables -->
+    {{-- <!-- Datatables -->
     <link href="{!! asset('public/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css') !!}" rel="stylesheet">
     <link href="{!! asset('public/admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') !!}" rel="stylesheet">
     <link href="{!! asset('public/admin/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') !!}" rel="stylesheet">
     <link href="{!! asset('public/admin/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') !!}" rel="stylesheet">
-    <link href="{!! asset('public/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') !!}" rel="stylesheet">
+    <link href="{!! asset('public/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') !!}" rel="stylesheet"> --}}
 
     <!-- Select2 -->
     <link href="{!! asset('public/admin/vendors/select2/dist/css/select2.min.css') !!}" rel="stylesheet">

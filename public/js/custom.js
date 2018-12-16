@@ -32,7 +32,9 @@ var getGroupList = function () {
                     data += '<td>' + value.id + '</td>';
                     data += '<td>' + value.group_name + '</td>';
                     data += '<td>' + value.created_at + '</td>';
-                    data += '<td><span class="edit_group_question" data-id="' + value.id + '" data-group_name="' + value.group_name + '" data-class="' + value.class + '">Sửa</span> | <span class="delete_group" data-id="'+value.id+'" onclick="return confirm(\'Xóa bộ câu hỏi sẽ xóa tất cả câu hỏi có trong bộ, xác nhận xóa?\')">Xóa</span></td>';
+                    data += '<td><span class="edit_group_question" data-id="' + value.id + '" data-group_name="' + value.group_name + '" data-class="' + value.class + 
+                    '"><span class="glyphicon glyphicon-edit"></span> Sửa</span> | <span class="delete_group" data-id="'+value.id 
+                    +'" onclick="return confirm(\'Xóa bộ câu hỏi sẽ xóa tất cả câu hỏi có trong bộ, xác nhận xóa?\')"><span class="glyphicon glyphicon-trash"></span> Xóa</span></td>';
                     data += '</tr>';
                 });
                 data += '</tbody>';
@@ -206,8 +208,9 @@ var getQuestionList = function () {
                         "data-answer2='" + value.answer2 + "' data-answer3='" + value.answer3 + "'" +
                         "data-answer4='" + value.answer4 + "' data-correct='" + value.correct + "'" +
                         "data-explain='" + value.explain + "' data-level='" + value.level + "' data-group_name='" + value.group_name + "'" +
-                        "data-created_at='" + value.created_at + "'>Chi tiết</span> | <a href='question/edit/" + value.id + "'>Sửa</a></span> | <span class='delete_question detail-pointer' data-id='" + value.id +
-                        "' onclick='return confirm(\"Bạn có chắc chắn muốn xóa không, xác nhận xóa?\")'>Xóa</span></td>";
+                        "data-created_at='" + value.created_at + "'><span class='glyphicon glyphicon-list-alt'></span> Chi tiết</span> | <a href='question/edit/" + 
+                        value.id + "'><span class='glyphicon glyphicon-edit'></span> Sửa</a></span> | <span class='delete_question detail-pointer' data-id='" + value.id +
+                        "' onclick='return confirm(\"Bạn có chắc chắn muốn xóa không, xác nhận xóa?\")'><span class='glyphicon glyphicon-trash'></span> Xóa</span></td>";
                     data += '</tr>';
                 });
                 data += '</tbody></table>';
@@ -268,8 +271,8 @@ var getTopicList = function () {
                     data += '<td>' + value.topic_name + '</td>';
                     data += '<td>' + value.created_at + '</td>';
                     data += '<td><span class="edit_topic_question detail-pointer" data-id="'+value.id+
-                    '" data-topic_name="'+value.topic_name+'" data-class="'+value.class+'">Sửa</span> | <span class="delete_topic detail-pointer" data-id="' + value.id + 
-                    '" onclick="return confirm(\'Xóa chủ đề sẽ xóa tất cả đề thi có trong chủ đề, xác nhận xóa?\')">Xóa</span></td>';
+                    '" data-topic_name="'+value.topic_name+'" data-class="'+value.class+'"><span class="glyphicon glyphicon-edit"></span> Sửa</span> | <span class="delete_topic detail-pointer" data-id="' + value.id + 
+                    '" onclick="return confirm(\'Xóa chủ đề sẽ xóa tất cả đề thi có trong chủ đề, xác nhận xóa?\')"><span class="glyphicon glyphicon-trash"></span> Xóa</span></td>';
                     data += '</tr>';
                 });
                 data += '</tbody></table>';
@@ -444,9 +447,9 @@ var getTestList = function () {
                     data += '<td>' + value.secret_key + '</td>';
                     data += '<td><span class="test-des detail-pointer" data-test_name="' + value.test_name + '" data-secret_key="' + value.secret_key + '"' +
                         'data-is_required="' + value.is_required + '" data-note="' + value.note + '" data-created_at="' + value.created_at + 
-                        '">Chi tiết</span> | <a href="#">Sửa</a> | <span class="disable_test detail-pointer" data-id="' + value.id +
+                        '">Chi tiết</span> | <a href="#"><span class="glyphicon glyphicon-edit"></span> Sửa</a> | <span class="disable_test detail-pointer" data-id="' + value.id +
                         '" data-status="0" onclick="return confirm(\'Đề thi này sẽ không hiển thị nữa?\')">Khóa</span> | <span class="delete_test detail-pointer" data-id="' + value.id +
-                        '" onclick="return confirm(\'Bạn có chắc chắn muốn xóa không, xác nhận xóa?\')">Xóa</span></td>';
+                        '" onclick="return confirm(\'Bạn có chắc chắn muốn xóa không, xác nhận xóa?\')"><span class="glyphicon glyphicon-trash"></span> Xóa</span></td>';
                     data += '</tr>';
                 });
                 data += '</tbody></table>';

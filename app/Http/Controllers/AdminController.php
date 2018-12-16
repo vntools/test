@@ -27,7 +27,8 @@ class AdminController extends Controller
     {
         $totalUser = User::count();
         $totalQuestion = Question::count();
-        $totalTest = Test::count();
-        return view('admin-home')->with(['totalUser' => $totalUser, 'totalQuestion' => $totalQuestion, 'totalTest' => $totalTest]);
+        $totalTest = Test::where('is_required', '=', '1')->count();
+        $totalTestPractice = Test::where('is_required', '<>', '1')->count();
+        return view('admin-home')->with(['totalUser' => $totalUser, 'totalQuestion' => $totalQuestion, 'totalTest' => $totalTest, 'totalTestPractice'=> $totalTestPractice]);
     }
 }
